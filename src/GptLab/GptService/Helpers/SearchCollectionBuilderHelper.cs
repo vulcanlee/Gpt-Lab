@@ -1,8 +1,5 @@
 ﻿using Azure.AI.OpenAI;
-using CommonDomain.DataModels;
-using Domains.Models;
 using GptLibrary.Models;
-using GptLibrary.Services;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;

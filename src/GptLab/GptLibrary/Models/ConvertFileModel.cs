@@ -1,7 +1,5 @@
-﻿using Domains.Models;
-using GptLibrary.Gpt;
+﻿using GptLibrary.Gpt;
 using GptLibrary.Gpts;
-using GptLibrary.Services;
 using NPOI.HPSF;
 
 namespace GptLibrary.Models

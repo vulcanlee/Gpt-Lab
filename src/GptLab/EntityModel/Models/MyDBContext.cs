@@ -17,7 +17,10 @@ public partial class MyDBContext : DbContext
     public DbSet<MyUser> MyUsers { get; set; } = null!;
     public DbSet<MyUserPasswordHistory> MyUserPasswordHistory { get; set; } = null!;
     public DbSet<AccountPolicy> AccountPolicy { get; set; } = null!;
-    #endregion
+     public DbSet<ExpertDirectory> ExpertDirectory { get; set; } = null!;
+     public DbSet<ExpertFile> ExpertFile { get; set; } = null!;
+    public DbSet<ExpertFileChunk> ExpertFileChunk { get; set; } = null!;
+  #endregion
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
