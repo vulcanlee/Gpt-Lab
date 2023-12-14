@@ -1,8 +1,10 @@
-﻿using GptLibrary.Gpt;
+﻿using EntityModel.Models;
+using GptLibrary.Gpt;
 using GptLibrary.Gpts;
+using GptService.Services;
 using NPOI.HPSF;
 
-namespace GptLibrary.Models
+namespace GptService.Models
 {
     /// <summary>
     /// 進行文字轉換與切割處理需求之類別

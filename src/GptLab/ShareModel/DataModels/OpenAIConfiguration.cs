@@ -3,7 +3,6 @@
 public enum AIEngineEnum
 {
     AzureOpenAI,
-    Twcs,
 }
 
 public class OpenAIConfiguration

@@ -1,7 +1,7 @@
 ﻿using NPOI.XWPF.UserModel;
 using NPOI.XWPF.Extractor;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     public class WordToText : IFileToText
     {

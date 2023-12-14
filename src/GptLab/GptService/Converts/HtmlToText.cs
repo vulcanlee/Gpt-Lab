@@ -1,6 +1,6 @@
 ﻿using HtmlAgilityPack;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     public class HtmlToText : IFileToText
     {

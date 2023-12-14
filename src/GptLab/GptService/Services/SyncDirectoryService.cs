@@ -1,7 +1,7 @@
-﻿using Domains.Models;
-using GptLibrary.Models;
+﻿using EntityModel.Models;
+using GptService.Models;
 
-namespace GptLibrary.Services
+namespace GptService.Services
 {
     public class SyncDirectoryService
     {
@@ -92,7 +92,7 @@ namespace GptLibrary.Services
                         if (expertFileResult.Status == true)
                         {
                             var expertFile = expertFileResult.Payload;
-                            if(expertFile.ProcessingStatus != CommonDomain.Enums.ExpertFileStatusEnum.Finish)
+                            if(expertFile.ProcessingStatus != ShareModel.Enums.ExpertFileStatusEnum.Finish)
                             {
                                 addFile = true;
                             }

@@ -2,7 +2,7 @@
 using DocumentFormat.OpenXml.Presentation;
 using System.Text;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     public class PptToText : IFileToText
     {

@@ -1,8 +1,8 @@
-﻿using Domains.Models;
-using GptLibrary.Models;
+﻿using EntityModel.Models;
+using GptService.Models;
 using Newtonsoft.Json;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// 將文字內容與切割後的文字Chunk，寫入到檔案內

@@ -1,4 +1,4 @@
-﻿namespace GptLibrary.Services;
+﻿namespace GptService.Services;
 
 /// <summary>
 /// 提供各種轉換 Embedding 會用到可支援的副檔案名稱

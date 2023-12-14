@@ -1,21 +1,19 @@
-﻿using BAL.Helpers;
-using CommonDomain.DataModels;
-using Domains.Models;
-using EFCore.BulkExtensions;
-using GptLibrary.Models;
+﻿using Business.Helpers;
+using EntityModel.Models;
 using Microsoft.EntityFrameworkCore;
+using ShareModel.DataModels;
 using System.Dynamic;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// ExpertFileChunk Repository
 /// </summary>
 public class GptExpertFileChunkService
 {
-    private readonly BackendDBContext context;
+    private readonly MyDBContext context;
 
-    public GptExpertFileChunkService(BackendDBContext context)
+    public GptExpertFileChunkService(MyDBContext context)
     {
         this.context = context;
     }

@@ -1,9 +1,9 @@
-﻿using CommonDomain.DataModels;
-using Domains.Models;
-using GptLibrary.Helpers;
-using GptLibrary.Models;
+﻿using EntityModel.Models;
+using GptService.Helpers;
+using GptService.Models;
+using ShareModel.DataModels;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// 針對單一目錄對應要進行的同步工作
@@ -75,7 +75,7 @@ public class SyncProcessingService
             }
             #endregion
 
-            await gptExpertFileService.ChangeStatusAsync(item.FullName, CommonDomain.Enums.ExpertFileStatusEnum.Finish);
+            await gptExpertFileService.ChangeStatusAsync(item.FullName, ShareModel.Enums.ExpertFileStatusEnum.Finish);
 
             #region 產生 EmbeddingSearchHelper 集合物件
             ServiceResult<ExpertFile> expertFileResult = await gptExpertFileService.GetAsync(item.FullName);

@@ -1,12 +1,11 @@
-﻿using CommonDomain.DataModels;
-using Domains.Models;
+﻿using EntityModel.Models;
 using GptLibrary.Gpt;
 using GptLibrary.Gpts;
-using GptLibrary.Helpers;
-using GptLibrary.Models;
-using System.Dynamic;
+using GptService.Helpers;
+using GptService.Models;
+using ShareModel.DataModels;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// 將 Chunk 文字內容轉換成為 Embedding 向量
@@ -61,7 +60,7 @@ public class ConvertToEmbeddingService
         await convertFileModelService
             .ExportEmbeddingTextAsync(expertFile, convertFile, index);
 
-        expertFile.ProcessingStatus = CommonDomain.Enums.ExpertFileStatusEnum.ToEmbedding;
+        expertFile.ProcessingStatus = ShareModel.Enums.ExpertFileStatusEnum.ToEmbedding;
         await gptExpertFileService.UpdateAsync(expertFile);
 
         #region 產生 Chunk 紀錄

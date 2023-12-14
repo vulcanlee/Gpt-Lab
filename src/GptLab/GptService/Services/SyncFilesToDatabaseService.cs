@@ -1,8 +1,8 @@
-﻿using Domains.Models;
-using GptLibrary.Models;
+﻿using EntityModel.Models;
+using GptService.Models;
 using Microsoft.Extensions.Logging;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// 將實體檔案系統資訊，同步到資料庫中
@@ -69,7 +69,7 @@ public class SyncFilesToDatabaseService
                     CreateAt = DateTime.Now,
                     UpdateAt = DateTime.Now,
                     SyncAt = DateTime.Now,
-                    ProcessingStatus = CommonDomain.Enums.ExpertFileStatusEnum.Begin,
+                    ProcessingStatus = ShareModel.Enums.ExpertFileStatusEnum.Begin,
                 };
 
                 await Console.Out.WriteLineAsync($"Found File : {expertFile.FileName}");
@@ -82,7 +82,7 @@ public class SyncFilesToDatabaseService
                 // 檔案已存在，更新同步時間資訊(用來判斷哪些檔案紀錄在資料庫內已經過時了)
                 var checkFile = checkFileResult.Payload;
                 checkFile.SyncAt = DateTime.Now;
-                if (checkFile.ProcessingStatus != CommonDomain.Enums.ExpertFileStatusEnum.Finish)
+                if (checkFile.ProcessingStatus != ShareModel.Enums.ExpertFileStatusEnum.Finish)
                 {
                     expertFiles.Add(checkFile);
                 }

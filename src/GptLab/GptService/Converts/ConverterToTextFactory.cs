@@ -1,10 +1,10 @@
 ﻿using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
-using GptLibrary.Models;
+using GptService.Models;
 using Microsoft.Extensions.Logging;
 using System.Text;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     /// <summary>
     /// 建立可用於轉換檔案成為文字內容的物件之工廠方法

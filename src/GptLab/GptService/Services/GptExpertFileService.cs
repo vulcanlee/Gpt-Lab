@@ -1,21 +1,20 @@
-﻿using BAL.Helpers;
-using CommonDomain.DataModels;
-using CommonDomain.Enums;
-using Domains.Models;
+﻿using Business.Helpers;
 using EFCore.BulkExtensions;
-using GptLibrary.Models;
+using EntityModel.Models;
 using Microsoft.EntityFrameworkCore;
+using ShareModel.DataModels;
+using ShareModel.Enums;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// ExpertFile Repository
 /// </summary>
 public class GptExpertFileService
 {
-    private readonly BackendDBContext context;
+    private readonly MyDBContext context;
 
-    public GptExpertFileService(BackendDBContext context)
+    public GptExpertFileService(MyDBContext context)
     {
         this.context = context;
     }

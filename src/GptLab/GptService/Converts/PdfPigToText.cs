@@ -5,7 +5,7 @@ using System.Text;
 using UglyToad.PdfPig;
 using UglyToad.PdfPig.Content;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     public class PdfPigToText : IFileToText
     {

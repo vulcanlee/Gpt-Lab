@@ -1,4 +1,4 @@
-﻿namespace GptLibrary.Models
+﻿namespace GptService.Models
 {
     public class ExpertFileInfo
     {

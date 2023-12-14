@@ -2,7 +2,7 @@
 using DocumentFormat.OpenXml.Spreadsheet;
 using System.Text;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     public class ExcelToText : IFileToText
     {

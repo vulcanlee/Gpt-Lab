@@ -1,9 +1,9 @@
 ﻿using NPOI.XWPF.UserModel;
 using NPOI.XWPF.Extractor;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
-    public class MarkdownToText : IFileToText
+    public class TextToText : IFileToText
     {
         public Task<string> ToTextAsync(string filename)
         {

@@ -1,7 +1,9 @@
 ﻿using Azure.AI.OpenAI;
-using GptLibrary.Models;
+using EntityModel.Models;
+using GptService.Services;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using ShareModel.DataModels;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -9,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GptLibrary.Helpers;
+namespace GptService.Helpers;
 
 public class SearchCollectionBuilderHelper
 {

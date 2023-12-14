@@ -1,20 +1,19 @@
-﻿using BAL.Helpers;
-using CommonDomain.DataModels;
-using Domains.Models;
+﻿using Business.Helpers;
 using EFCore.BulkExtensions;
-using GptLibrary.Models;
+using EntityModel.Models;
 using Microsoft.EntityFrameworkCore;
+using ShareModel.DataModels;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// ExpertDirectory Repository
 /// </summary>
 public class GptExpertDirectoryService
 {
-    private readonly BackendDBContext context;
+    private readonly MyDBContext context;
 
-    public GptExpertDirectoryService(BackendDBContext context)
+    public GptExpertDirectoryService(MyDBContext context)
     {
         this.context = context;
     }

@@ -4,7 +4,7 @@ using iText.Kernel.Pdf.Canvas.Parser;
 using iText.Kernel.Pdf;
 using Microsoft.Extensions.Logging;
 
-namespace GptLibrary.Converts
+namespace GptService.Converts
 {
     public class PdfToText : IFileToText
     {

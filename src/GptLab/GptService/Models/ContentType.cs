@@ -1,4 +1,4 @@
-﻿namespace GptLibrary.Models
+﻿namespace GptService.Models
 {
     /// <summary>
     /// 定義每種可轉換成為文字內容的檔案類型之副檔案名稱有哪些

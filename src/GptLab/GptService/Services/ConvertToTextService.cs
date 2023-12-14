@@ -1,9 +1,9 @@
-﻿using Domains.Models;
-using GptLibrary.Converts;
+﻿using EntityModel.Models;
 using GptLibrary.Gpt;
-using GptLibrary.Models;
+using GptService.Converts;
+using GptService.Models;
 
-namespace GptLibrary.Services;
+namespace GptService.Services;
 
 /// <summary>
 /// 將檔案內容轉換成為文字檔案
@@ -66,7 +66,7 @@ public class ConvertToTextService
         #region 計算 TokenSize 與 EmbeddingCost 的成本
         expertFile.TokenSize = convertFile.TokenSize;
         expertFile.EmbeddingCost = convertFile.EmbeddingCost;
-        expertFile.ProcessingStatus = CommonDomain.Enums.ExpertFileStatusEnum.ToText;
+        expertFile.ProcessingStatus = ShareModel.Enums.ExpertFileStatusEnum.ToText;
         expertFile.ChunkSize = convertFile.ConvertFileSplitItems.Count;
         await gptExpertFileService.UpdateAsync(expertFile);
         #endregion

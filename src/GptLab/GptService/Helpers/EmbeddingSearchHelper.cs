@@ -1,9 +1,6 @@
 ﻿using Azure.AI.OpenAI;
 using ShareModel.DataModels;
-using Domains.Models;
 using GptLibrary.Gpts;
-using GptLibrary.Models;
-using GptLibrary.Services;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
@@ -12,8 +9,10 @@ using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GptService.Models;
+using EntityModel.Models;
 
-namespace GptLibrary.Helpers;
+namespace GptService.Helpers;
 
 public class EmbeddingSearchHelper
 {

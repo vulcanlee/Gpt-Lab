@@ -1,6 +1,4 @@
 ﻿using ShareModel.DataModels;
-using GptLibrary.Converts;
-using GptLibrary.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
@@ -31,10 +29,6 @@ public class AIEngineFactory
         {
             result = serviceProvider.GetService<GPT35PromptCompletion>();
         }
-        else if (aIEngineEnum == AIEngineEnum.Twcs)
-        {
-            result = serviceProvider.GetService<TwcsGPTPromptCompletion>();
-        }
 
         return result;
     }
@@ -46,10 +40,6 @@ public class AIEngineFactory
         if (aIEngineEnum == AIEngineEnum.AzureOpenAI)
         {
             result = serviceProvider.GetService<AdaEmbeddingVector>();
-        }
-        else if (aIEngineEnum == AIEngineEnum.Twcs)
-        {
-            result = serviceProvider.GetService<TwcsAdaEmbeddingVector>();
         }
 
         return result;

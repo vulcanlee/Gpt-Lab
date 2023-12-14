@@ -1,4 +1,4 @@
-﻿namespace GptLibrary.Converts
+﻿namespace GptService.Converts
 {
     public interface IFileToText
     {
