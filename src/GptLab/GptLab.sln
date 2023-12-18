@@ -7,17 +7,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityModel", "EntityModel\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShareModel", "ShareModel\ShareModel.csproj", "{285AF017-EB45-4F12-A1C0-68556A202D99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dto", "Dto\Dto.csproj", "{A096A3CF-3749-4B94-ADEF-84DB12B1EBCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dto", "Dto\Dto.csproj", "{A096A3CF-3749-4B94-ADEF-84DB12B1EBCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{651E5859-5BAB-4D00-B14B-8D461B92ED7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{651E5859-5BAB-4D00-B14B-8D461B92ED7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GptLibrary", "GptLibrary\GptLibrary.csproj", "{3930E889-5FC1-4DCC-BC62-D61487DFED39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GptLibrary", "GptLibrary\GptLibrary.csproj", "{3930E889-5FC1-4DCC-BC62-D61487DFED39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{18757825-DE0F-47DA-8A5C-C66740294805}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{18757825-DE0F-47DA-8A5C-C66740294805}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleLab", "ConsoleLab", "{508E2C56-0B9E-4284-B398-655D246E757A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GptService", "GptService\GptService.csproj", "{38DA527D-4FC6-4C1A-8CA0-11742C63B2AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GptService", "GptService\GptService.csproj", "{38DA527D-4FC6-4C1A-8CA0-11742C63B2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GptWeb", "GptWeb\GptWeb\GptWeb.csproj", "{08D1E312-0F31-41AF-BF0B-E75385A8935E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GptWeb.Client", "GptWeb\GptWeb.Client\GptWeb.Client.csproj", "{B7168044-29D0-4CBB-AC89-D05FE524960A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,14 @@ Global
 		{38DA527D-4FC6-4C1A-8CA0-11742C63B2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38DA527D-4FC6-4C1A-8CA0-11742C63B2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38DA527D-4FC6-4C1A-8CA0-11742C63B2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D1E312-0F31-41AF-BF0B-E75385A8935E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D1E312-0F31-41AF-BF0B-E75385A8935E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D1E312-0F31-41AF-BF0B-E75385A8935E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D1E312-0F31-41AF-BF0B-E75385A8935E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7168044-29D0-4CBB-AC89-D05FE524960A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7168044-29D0-4CBB-AC89-D05FE524960A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7168044-29D0-4CBB-AC89-D05FE524960A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7168044-29D0-4CBB-AC89-D05FE524960A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
