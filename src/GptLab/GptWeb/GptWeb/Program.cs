@@ -13,6 +13,14 @@ try
 
     var builder = WebApplication.CreateBuilder(args);
 
+
+    // NLog: Setup NLog for Dependency injection
+    builder.Logging.ClearProviders();
+    builder.Host.UseNLog();
+
+
+
+
     // Add services to the container.
     builder.Services.AddRazorComponents()
         .AddInteractiveServerComponents()
@@ -41,6 +49,8 @@ try
         .AddInteractiveServerRenderMode()
         .AddInteractiveWebAssemblyRenderMode()
         .AddAdditionalAssemblies(typeof(Counter).Assembly);
+
+    logger.Debug("init main done");
 
     app.Run();
 }
